@@ -1,0 +1,67 @@
+/*首页底部*/
+#btn{
+    background:white;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    padding-top:15px;
+    border-top:2px solid rgb(187,187,187);
+    display:flex;
+    justify-content:space-around;
+    font-size:26px;
+    color:black;
+}
+#btn div{
+    text-align:center;
+}
+/*首页头部*/
+.nav1{
+    margin:20px 0;
+    display:flex;
+    justify-content:space-around;
+    font-size:34px;
+    color:rgb(212,47,47);
+    text-align:center;
+}
+.navText{
+    box-sizing:border-box;
+    width:85%;
+}
+.navImg{
+    width:15%;
+}
+/*图片轮播*/
+.homeLb{
+    background:rgb(226,226,226);
+    padding:12px 0;
+}
+.homeLb img{
+    width:100%;
+}
+/*礼包*/
+.gift{
+    margin:4% 2%;
+}
+.gift1{
+    text-align:center;
+    font-size:31px;
+    color:white;
+    background:rgb(244,98,89);
+    width:80%;
+    border-radius:20px;
+    padding:1% 0;
+    position:relative;
+
+}
+.gCil{
+    width:45px;
+    height:45px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    left:2%;
+    top:10%;
+}
+.gCil img{
+    margin-top:3px;
+}

@@ -1,0 +1,62 @@
+<div class="nav1">
+    <div class="navImg"><a href="#!addition"><img src="img/3.png" alt=""></a></div>
+    <div class="navText">游戏视频</div>
+</div>
+<!--图片轮播-->
+<div class="imgBox">
+    <div class="homeLb">
+        <img ng-repeat="src in imgSrc" ng-src={{src}} alt="" >
+    </div>
+    <div class="btnLb">
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+</div>
+<!--礼包-->
+<div class="gift">
+    <div class="vImg1">
+        <span class="yh">
+            <img src="img/vs.png" alt="">
+
+        </span>
+        视频专区
+    </div>
+    <div class="gBox">
+        <div class="g1">
+            <img src="img/vi-1.png" alt="">
+            <h1>天天酷跑</h1>
+        </div>
+        <div class="g1">
+            <img src="img/vi-2.png" alt="">
+            <h1>天天酷跑</h1>
+        </div>
+        <div class="g1">
+            <img src="img/vi-3.png" alt="">
+            <h1>天天酷跑</h1>
+        </div>
+        <div class="g1">
+            <img src="img/vi-3.png" alt="">
+            <h1>天天酷跑</h1>
+        </div>
+    </div>
+</div>
+
+<div class="game gam">
+
+    <div class="game1">
+        <div class="vImg nv">
+            <img src="img/nv.png" alt="">
+            最新视频
+        </div>
+        <div ng-repeat="v in video" class="video">
+            <img ng-src={{v}} alt="">
+            6.1版本单排上分最强打野英雄Tops5排行
+        </div>
+        <div class="pmore">
+            <a href="#!strategy"><button class="more">查看更多</button></a>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'templateView/foot.html'"></div>

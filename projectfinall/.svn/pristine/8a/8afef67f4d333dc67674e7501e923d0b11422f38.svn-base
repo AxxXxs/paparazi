@@ -1,0 +1,16 @@
+.my{
+    margin:0.5rem;
+}
+.myWall{
+    background-image: url("img/my-1.png");
+}
+.myContent{
+
+}
+.myHead{
+    width: 25%;
+    margin: 0 auto;
+}
+.myHead img{
+    width: 100%;
+}

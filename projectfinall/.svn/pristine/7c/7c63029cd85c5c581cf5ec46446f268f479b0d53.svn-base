@@ -1,0 +1,53 @@
+<div class="nav1">
+    <div class="navImg"><img src="img/3.png" alt=""></div>
+    <div class="navText">玩咖手游助手</div>
+</div>
+
+<!--图片轮播-->
+<div class="homeLb">
+    <img src="img/4.png" alt="">
+</div>
+<!--礼包-->
+<div class="gift">
+    <div class="gift1">
+        礼包公告
+        <div class="gCil">
+            <img src="img/5.png" alt="">
+        </div>
+    </div>
+</div>
+<!--底部导航-->
+<div id="btn">
+    <div>
+        <div>
+            <a href="#!home">
+                <img src="img/1.png" alt="">
+            </a>
+        </div>
+        <div><a href="#!home">首页</a></div>
+    </div>
+    <div>
+        <div>
+            <a href="#!video">
+                <img src="img/1.png" alt="">
+            </a>
+        </div>
+        <div><a href="#!shop">视频</a></div>
+    </div>
+    <div>
+        <div>
+            <a href="#!shop">
+                <img src="img/1.png" alt="">
+            </a>
+        </div>
+        <div><a href="#!shop">商城</a></div>
+    </div>
+    <div>
+        <div>
+            <a href="#!my">
+                <img src="img/2.png" alt="">
+            </a>
+        </div>
+        <div><a href="#!my">我的</a></div>
+    </div>
+</div>

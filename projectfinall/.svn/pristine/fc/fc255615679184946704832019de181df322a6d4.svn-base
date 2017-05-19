@@ -1,0 +1,51 @@
+.shopNav{
+    margin:20px 0;
+    display:flex;
+    justify-content:space-around;
+    font-size:0.4rem;
+    color:rgb(212,47,47);
+    text-align:center;
+}
+.shopNavText{
+    box-sizing:border-box;
+    width:22%;
+}
+.shopNavImg{
+    width:15%;
+    margin-top:-2px;
+}
+.shop-bottom{
+    margin-bottom:100px;
+    overflow:hidden;
+}
+.shop-bottom div{
+    margin-bottom:10px;
+    overflow:hidden;
+}
+.shop-bottom img{
+    margin-bottom: 1em;
+    width:100%;
+}
+
+.sBtn1,.sBtn2{
+    width: 3.3rem;
+    font-size: 0.3rem;
+}
+
+.sImg{
+    margin-top: 1em;
+}
+.b{
+    text-align:center;
+}
+.shopHot h4{
+    margin-left: 0.25rem;
+    font-size: 0.3rem;
+}
+.hotGift{
+    width:45%;
+    float:left;
+    margin:0px 2.5% 10px;
+    color:rgb(139,139,139);
+    font-size:0.25rem;
+}

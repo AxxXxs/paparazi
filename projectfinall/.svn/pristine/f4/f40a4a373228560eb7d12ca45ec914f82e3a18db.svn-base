@@ -1,0 +1,83 @@
+<div>
+    <div class="moreNav">
+        <img src="img/gift-1.png" alt="">
+        <p>游戏视频</p>
+    </div>
+    <!--图片轮播-->
+    <div class="imgBox">
+        <div class="homeLb">
+            <img ng-repeat="src in imgSrc" ng-src={{src}} alt="" >
+        </div>
+        <div class="btnLb">
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+    </div>
+
+    <div id="more">
+        <div id="lolVmid1">
+            <div>
+                <img src="img/21.png" alt="">
+            </div>
+            <div>
+                <h2>功夫熊猫</h2>
+                <p>关注游戏领取游戏专属礼包</p>
+            </div>
+            <div style="float:right;margin-right: 8px">
+                <button>关注</button>
+            </div>
+        </div>
+        <div id="lolVmid2"></div>
+        <div id="moreVideo">
+            <div id="moreVideo1">
+                <div>
+                    <p style="color: rgb(217,39,39);">最新视频</p>
+                    <div style="display: block"></div>
+                </div>
+                <div>
+                    <p>视频排行</p>
+                    <div></div>
+                </div>
+            </div>
+            <div id="videoMid2">
+                <div id="videoMid21">
+                    <a href="#!detailVideo">
+                        <img src="img/22.png" alt="">
+                        <div id="videoMid211">
+                            <p>6.1版本单排上分最强打野英雄Tops5排行</p>
+                            <div>
+                                <div>
+                                    <img src="img/24.png" alt="">
+                                    <span style="margin-left: -1rem;margin-top: 0.1rem">2100</span>
+                                </div>
+                                <div>
+                                    <img src="img/25.png" alt="" style="width: 0.5rem;height:0.3rem ">
+                                    <span style="margin-left: -0.2rem;margin-top: 0.1rem">5421次播放</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="videoMid22">
+                    <a href="">
+                        <img src="img/23.png" alt="">
+                        <div id="videoMid212">
+                            <p>6.1版本单排上分最强打野英雄Tops5排行</p>
+                            <div>
+                                <div>
+                                    <img src="img/24.png" alt="">
+                                    <span style="margin-left: -1rem;margin-top: 0.1rem">2100</span>
+                                </div>
+                                <div>
+                                    <img src="img/25.png" alt="" style="width: 0.5rem;height:0.3rem ">
+                                    <span style="margin-left: -0.2rem;margin-top: 0.1rem">5421次播放</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

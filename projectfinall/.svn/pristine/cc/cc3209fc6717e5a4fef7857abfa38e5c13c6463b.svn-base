@@ -1,0 +1,24 @@
+.nav1 p{
+    font-size: 1.5rem;
+    margin-top: .4em;
+}
+.shop-bottom p{
+    margin-left: 1em;
+}
+.shop-bottom img{
+    margin-bottom: 1em;
+}
+.shop-bottom button{
+    font-size: 1.3rem;
+}
+.sBtn1{
+    width: 8.7em;
+    margin-left: 1.7em;
+}
+.sBtn2{
+    width: 8.7em;
+    margin-left: 3.4em;
+}
+.sImg{
+    margin-top: 1em;
+}

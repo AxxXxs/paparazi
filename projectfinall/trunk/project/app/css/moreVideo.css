@@ -1,0 +1,148 @@
+.moreNav{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(249,249,249);
+}
+.moreNav p{
+    width: 80%;
+    float: left;
+    text-align: center;
+    font-size: 0.38rem;
+    color: #ff0b20;
+    padding:0.25rem 0;
+}
+.moreNav img{
+    float: left;
+    width: 0.2rem;
+    margin: 0.35rem 0 0 0.5rem;
+}
+#more{
+    /*padding-bottom: 4.5rem;*/
+}
+#lolVmid1{
+    overflow: hidden;
+}
+#lolVmid1 img{
+    width: 1.6rem;
+    padding: 0.2rem;
+}
+#lolVmid1 div{
+    float: left;
+}
+#lolVmid1 div h2{
+    font-size: 0.38rem;
+    line-height: 0.4rem;
+}
+#lolVmid1 div p{
+    font-size: 0.25rem;
+    color: rgb(250,187,184);
+}
+#lolVmid1 div button{
+    width: 1.5rem;
+    height: 0.7rem;
+    background-color: rgb(254,119,111);
+    margin-top: 0.4rem;
+    color: white;
+    font-size: 0.3rem;
+    outline: none;
+    border:none;
+    border-radius: 5%;
+}
+#lolVmid2{
+    height:0.2rem;
+    background-color: rgb(226,226,226);
+}
+#moreVideo{
+    width: 100%;
+}
+#moreVideo1{
+    width: 94%;
+    height: 50px;
+    margin-left: 3%;
+    border-bottom:1px solid rgb(226,226,226);
+    display: flex;
+    justify-content: space-around;
+}
+#moreVideo1 div{
+    position: relative;
+}
+#moreVideo1 div p{
+    font-size: 0.35rem;
+    line-height: 50px;
+}
+#moreVideo1 div div{
+    position: absolute;
+    width: 2rem;
+    height: 0.05rem;
+    background-color: rgb(217,39,39);
+    top: 0.9rem;
+    left: -0.25rem;
+    display: none;
+}
+#videoMid2{
+    width: 92%;
+    margin-left: 3%;
+    box-sizing: border-box;
+}
+#videoMid2{
+    width: 100%;
+    padding-right: 10px;
+}
+#videoMid2 div img{
+    width: 40%;
+}
+#videoMid21,#videoMid22{
+    width: 100%;
+    border-bottom: 1px solid rgb(226,226,226);
+    padding: 15px 0px;
+}
+#videoMid211,#videoMid212{
+    width: 56%;
+    float: right;
+    font-size: 0.3rem;
+}
+#videoMid21 p,#videoMid22 p{
+    width: 95%;
+    color: rgb(138,138,138);
+}
+#videoMid211 div,#videoMid212 div{
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#videoMid211 div div img,#videoMid212 div div img{
+    width:0.3rem;
+    height:0.3rem ;
+    margin-top: 0.1rem;
+}
+#videoMid211 div div span,#videoMid212 div div span{
+    font-size: 0.2rem;
+    color: rgb(138,138,138);
+}
+
+
+/*detailVideo部分CSS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+
+<!--图片轮播-->
+<div class="homeLb">
+    <img src="img/4.png" alt="">
+</div>
+<!--礼包-->
+<div class="gift">
+    <div class="gift1">
+        礼包公告
+        <div class="gCil">
+            <img src="img/5.png" alt="">
+        </div>
+    </div>
+</div>

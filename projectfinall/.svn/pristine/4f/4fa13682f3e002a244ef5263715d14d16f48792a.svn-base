@@ -1,0 +1,6 @@
+<div>
+     <h1>用户信息界面{{name}}</h1>
+    <ul>
+        <li ng-repeat="ballName in products|unique:'category'">{{ballName}}</li>
+    </ul>
+</div>

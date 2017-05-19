@@ -1,0 +1,120 @@
+.moreNav{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(249,249,249);
+}
+.moreNav p{
+    width: 80%;
+    float: left;
+    text-align: center;
+    font-size: 0.38rem;
+    color: #ff0b20;
+    padding:0.25rem 0;
+}
+.moreNav img{
+    float: left;
+    width: 0.2rem;
+    margin: 0.35rem 0 0 0.5rem;
+}
+#videoMid {
+    width: 100%;
+    border-top: 10px solid rgb(226,226,226);
+    border-bottom: 10px solid rgb(226,226,226);
+    overflow: hidden;
+}
+#vBox {
+    width: 400%;
+    transition: all 2s;
+}
+#vBox img {
+    width: 25%;
+    float: left;
+}
+#videoMid p {
+    font-size: 0.3rem;
+    color: black;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+}
+#vBoxlist div {
+    display: inline-block;
+    text-align: center;
+    padding: 0.2rem;
+}
+#vBox img {
+    width: 25%;
+    float: left;
+}
+.listImg1 {
+    width: 0.6rem;
+    height: 0.3rem;
+    vertical-align: middle;
+}
+#vBoxlist div p {
+    display: inline-block;
+    color: rgb(200,200,200);
+    font-size: 0.26rem;
+    margin-top: -0.2rem;
+}
+.listImg2, .listImg3 {
+    width: 0.3rem;
+    height: 0.35rem;
+    vertical-align: middle;
+}
+
+#lolVmid3 div {
+    overflow: hidden;
+}
+#lolVmid3 .p1 {
+    float: left;
+    margin-left: 0.2rem;
+    font-size: 0.38rem;
+    color: rgb(176,176,176);
+    line-height: 1rem;
+}
+#lolVmid3 .p2 {
+    float: right;
+    margin-right: 0.2rem;
+    font-size: 0.28rem;
+    color: rgb(180,180,180);
+    line-height: 1rem;
+}
+#videoMid1List div {
+    float: left;
+    width: 46%;
+    margin: 2%;
+    position: relative;
+}
+#videoMid1List a {
+    position: inherit;
+}
+#videoMid1List div img {
+    width: 100%;
+}
+#videoMid1List .img1 {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.5rem;
+    margin-left: -0.4rem;
+}
+#videoMid1List div p {
+    font-size: 0.2rem;
+    color: rgb(176,176,176);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

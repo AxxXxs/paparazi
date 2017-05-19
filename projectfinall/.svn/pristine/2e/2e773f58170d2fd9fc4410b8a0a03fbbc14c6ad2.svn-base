@@ -1,0 +1,287 @@
+/**
+ * Created by lanou3g on 17/4/21.
+ */
+//自定义模块->注入到app.js中
+var controllersModule = angular.module("controllersModule",[]);
+
+//绑定控制器
+controllersModule.controller("mainC",function($scope){
+    $scope.lb = function(ele1,ele2){
+        var left = 0;
+        // function autoplay(){
+        //     clearInterval(timer);
+        $scope.timer1 = setInterval(function(){
+                left++;
+                if(left==3){
+                    $(ele1).eq(0).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});
+                }
+                if(left>3){
+                    $(ele2)[0].style.transition="all 0s";
+                    left=0;
+                }else{
+                    $(ele2)[0].style.transition="all 2s"
+                }
+                $(ele1).eq(left).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});
+                $(ele2)[0].style.marginLeft=-left*100+"%";
+            },2500);
+        // }
+        // autoplay();
+        //小按钮
+        $(ele1).each(function(){
+            $(this).on("click",function(){
+                $(ele2)[0].style.transition="all 0s";
+                $(this).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});
+                $(ele2)[0].style.marginLeft=-$(this).index()*100+"%";
+                left=$(this).index();
+            })
+        });
+
+    }
+});
+
+
+//home界面的控制器
+controllersModule.controller("homeC",function($scope,facService){
+    $scope.lb(".btnLb li",".homeLb");
+    $scope.show=function(i){
+        if(i==1){
+            return false;
+        }else{
+            return true;
+        }
+    };
+    $scope.imgSrc=["img/4.png","img/l2.png","img/l2.jpg","img/4s.png"];
+    $scope.title=[{timg:"img/cy-1.png",ti:"穿越火线",lgImg:"img/cy-2.jpg",xImg:"img/cy-3.jpg",xImg1:"img/cy-4.jpg"},
+        {timg:"img/y-1.png",ti:"英雄联盟",lgImg:"img/y-2.jpg",xImg:"img/y-3.jpg",xImg1:"img/cy-3.jpg"},
+        {timg:"img/y-7.png",ti:"英雄联盟",lgImg:"img/y-4.jpg",xImg:"img/y-5.jpg",xImg1:"img/y-6.jpg"}];
+
+    $scope.video=["img/v-2.jpg","img/v-3.jpg","img/v-4.jpg","img/v-5.jpg"];
+
+
+    //左弹窗部分js
+    $(".navImg").click(function () {
+        $(".add").fadeIn(500);
+    });
+
+    $(".add").click(function () {
+           $(".add").fadeOut(500);
+    });
+
+    $(".navImg").click(function () {
+        clearInterval($scope.timer1)
+    })
+})
+
+
+controllersModule.controller("foot",function($scope){
+    $("#btn div").click(function () {
+        clearInterval($scope.timer1)
+    })
+
+})
+
+controllersModule.controller("video",function($scope){
+    $scope.lb(".btnLb li",".homeLb");
+    $scope.imgSrc=["img/v2-1.jpg","img/v2-2.jpg","img/v2-3.jpg","img/v2-1-1.jpg"];
+    $scope.video=["img/v-2.jpg","img/v-3.jpg","img/v-4.jpg","img/v-5.jpg"];
+
+    $(".navImg,.more").click(function () {
+        clearInterval($scope.timer1)
+    })
+
+})
+controllersModule.controller("moreVideo",function($scope){
+    $scope.lb(".btnLb li",".homeLb");
+    $scope.imgSrc=["img/v2-1.jpg","img/v2-2.jpg","img/v2-3.jpg","img/v2-1-1.jpg"];
+    $scope.video=["img/v-2.jpg","img/v-3.jpg","img/v-4.jpg","img/v-5.jpg"];
+
+    //nav返回上一级按钮
+    var moreImg = document.querySelector(".moreNav img");
+    moreImg.onclick=function () {
+        history.go(-1);
+    }
+
+    $(".moreNav,#videoMid21").click(function () {
+        clearInterval($scope.timer1)
+    })
+})
+controllersModule.controller("detailVideo",function($scope){
+    //nav返回上一级按钮
+    var moreImg = document.querySelector(".moreNav img");
+    moreImg.onclick=function () {
+        history.go(-1);
+    }
+
+})
+
+
+controllersModule.controller("shop",function($scope){
+    $scope.lb(".btnLb li",".homeLb");
+    $scope.imgSrc1 = ["img/s-1.png","img/l2.png","img/l2.jpg","img/s-1-1.png"];
+
+    $(".shopNav").click(function () {
+        clearInterval($scope.timer1)
+    })
+})
+
+controllersModule.controller("my",function($scope){
+    //关于我们js部分
+    $(".aboutA").click(function () {
+        $(".about").fadeIn(500);
+    });
+    $(".aboutBtn").click(function () {
+        $(".about").fadeOut(500);
+    });
+    var aboutH = $(".about").height()/2;
+    console.log(-aboutH);
+    $(".about").css("margin-top",-aboutH);
+})
+
+controllersModule.controller("login",function($scope){
+    $(".login-navImg").on("click",function () {
+        history.go(-1);
+    });
+})
+controllersModule.controller("register",function($scope){
+    //关于我们js部分
+    $(".registerAbout").click(function () {
+        $(".registerAbout").fadeIn(500);
+    });
+    $(".registerAboutBtn").click(function () {
+        $(".registerAbout").fadeOut(500);
+    });
+    var aboutH = $(".registerAbout").height()/2;
+    $(".registerAbout").css("margin-top",-aboutH);
+})
+
+//我的礼包控制器
+controllersModule.controller("myGift", function ($scope) {
+    $scope.giftList = [
+        {
+            title:"天天酷跑",
+            date:"失效日期：2017-09-09",
+            imgSrc:"img/gift-2.png",
+            ma:"15s88d16dssd91dsa",
+            useIt:"使用教程：进入游戏主界面-点击右上角齿轮-点击兑换-输入兑换码-确定领奖"
+        },
+        {
+            title:"英雄联盟",
+            date:"失效日期：2017-09-10",
+            imgSrc:"img/gift-3.png",
+            ma:"15s88d16dssd91dsa",
+            useIt:"使用教程：进入游戏主界面-点击右上角齿轮-点击兑换-输入兑换码-确定领奖"
+        },
+        {
+            title:"王者荣耀",
+            date:"失效日期：2018-03-20",
+            imgSrc:"img/gift-4.png",
+            ma:"15s88d16dssd91dsa",
+            useIt:"使用教程：进入游戏主界面-点击右上角齿轮-点击兑换-输入兑换码-确定领奖"
+        },
+        {
+            title:"仙剑奇侠",
+            date:"失效日期：2021-09-30",
+            imgSrc:"img/gift-5.png",
+            ma:"15s88d16dssd91dsa",
+            useIt:"使用教程：进入游戏主界面-点击右上角齿轮-点击兑换-输入兑换码-确定领奖"
+        }
+    ];
+
+    //nav返回上一级按钮
+    var giftImg = document.querySelector(".giftNav img");
+    giftImg.onclick=function () {
+        history.go(-1);
+    }
+});
+
+//我的收藏部分控制器
+controllersModule.controller("collectC", function ($scope) {
+    $scope.collect=[
+        {
+            content:"僵尸大战终极副本53关攻略通关视频",
+            time:"更新时间：2017.5.8"
+        },
+        {
+            content:"僵尸大战终极副本53关攻略通关视频",
+            time:"更新时间：2017.5.8"
+        },
+        {
+            content:"僵尸大战终极副本53关攻略通关视频",
+            time:"更新时间：2017.5.8"
+        },
+        {
+            content:"僵尸大战终极副本53关攻略通关视频",
+            time:"更新时间：2017.5.8"
+        }
+    ];
+    // $("#tabbar").css("display","none");
+    $(".giftNav img").on("click",function () {
+        history.go(-1);
+    });
+
+    var w = window.innerWidth + "px";
+    $scope.touchS = function (index) {
+        $(".li").css("width",w);
+        $(".li").eq(index).css("marginLeft","-1.5rem").siblings().css("marginLeft","0rem");
+    }
+    $scope.clickS = function (index) {
+        $(".li a").eq(index).parent().remove();
+    }
+
+});
+
+//新手攻略部分控制器
+controllersModule.controller("strategyC", function ($scope) {
+    $scope.strategy=[{
+        strategyImg:"img/strategy-1.png",
+        title:"单排上分最强打野英雄Tops5排行",
+        time:"更改时间：2017-6-18"
+    },{
+        strategyImg:"img/strategy-2.png",
+        title:"单排上分最强打野英雄Tops5排行",
+        time:"更改时间：2017-6-18"
+    },{
+        strategyImg:"img/strategy-3.png",
+        title:"单排上分最强打野英雄Tops5排行",
+        time:"更改时间：2017-6-18"
+    },{
+        strategyImg:"img/strategy-4.png",
+        title:"单排上分最强打野英雄Tops5排行",
+        time:"更改时间：2017-6-18"
+    },{
+        strategyImg:"img/strategy-5.png",
+        title:"单排上分最强打野英雄Tops5排行",
+        time:"更改时间：2017-6-18"
+    },{
+        strategyImg:"img/strategy-6.png",
+        title:"单排上分最强打野英雄Tops5排行",
+        time:"更改时间：2017-6-18"
+    }];
+
+    $(".giftNav img").on("click",function () {
+        history.go(-1);
+    });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

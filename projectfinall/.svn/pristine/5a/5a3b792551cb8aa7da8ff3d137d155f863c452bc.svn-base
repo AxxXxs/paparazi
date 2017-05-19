@@ -1,0 +1,22 @@
+<div>
+    <div>
+        <img src="../img/2-1.png" alt="">
+    </div>
+    <div>
+        <button class="btn btn-danger">登陆</button>
+    </div>
+    <div>
+        <h3>我关注的游戏</h3>
+        <a href="###">
+            <img src="../img/2-2.png" alt="">
+            <span>我关注的游戏</span>
+            <img src="../img/2-4.png" alt="">
+        </a>
+    </div>
+    <div>
+        <a href="###">
+            <img src="../img/2-3.png" alt="">
+            <span>添加游戏</span>
+        </a>
+    </div>
+</div>

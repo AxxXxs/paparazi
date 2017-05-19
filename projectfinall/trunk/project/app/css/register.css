@@ -1,0 +1,136 @@
+.my{
+    margin:0.3rem;
+}
+.my img{
+    width: 8%;
+}
+.registerWall{
+    background-image: url("../img/register3.png");
+    background-size: cover;
+    overflow: hidden;
+}
+.registerContent{
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255,255,255,0.9);
+    margin-top: 2rem;
+    position: relative;
+    padding-bottom: 1.7rem;
+}
+.registerHead{
+    width: 25%;
+    position: absolute;
+    top: -1rem;
+    left: 2.6rem;
+}
+.registerHead img{
+    width: 100%;
+}
+.registerLoad{
+    padding-top: 0.8rem;
+}
+.registerLoad p{
+    font-size: 0.38rem;
+}
+
+.registerSign{
+    overflow: hidden;
+    padding: 0.3rem;
+    border-bottom: solid 1px rgb(229,229,229);
+}
+.registerLeft{
+    margin-left: 0.5rem;
+}
+.registerLeft span{
+    font-size: 0.3rem;
+}
+.registerLeft u{
+    color: orange;
+}
+.registerLeft a{
+    margin-left: 0.3rem;
+    font-size: 0.3rem;
+    text-decoration: underline;
+    color: rgb(242,99,93);
+}
+.registerRight a{
+    font-size: 0.3rem;
+    color: #c2c2c2;
+}
+.registerRight a img{
+    width: 24%;
+    margin-right: 0.1rem;
+    vertical-align: top;
+}
+.registerRight span{
+    text-decoration: underline;
+}
+.registerAsk{
+    padding-bottom: 0.8rem;
+}
+.registerAsk li{
+    border-bottom: solid 1px rgb(229,229,229);
+    padding: 0.05rem;
+}
+.registerAsk li a{
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.askImg1{
+    width: 5.5%;
+    margin: 0.2rem 0.2rem 0.2rem 0.3rem;
+}
+.askImg2{
+    width: 2%;
+    margin-top: 0.25rem;
+    margin-right: 0.3rem;
+}
+.registerBtn button{
+    font-size: 0.3rem;
+    width: 2rem;
+}
+
+/*关于我们*/
+.about{
+    width: 80%;
+    position: fixed;
+    top:35%;
+    left:9.5%;
+    background-color: rgba(250,250,250,0.9);
+    padding-bottom: 1rem;
+    display: none;
+}
+.about p:nth-child(1){
+    background-color: rgba(241,241,241,.8);
+    font-size: 0.32rem;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+.about p:nth-child(2),.about p:nth-child(3){
+    font-size: 0.25rem;
+    padding: 0 0.5rem 0 0.5rem;
+    line-height: 0.4rem;
+    color: #555555;
+}
+.about p:nth-child(4) {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.4rem;
+    color: #ababab;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

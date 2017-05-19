@@ -1,0 +1,100 @@
+<div class="nav1">
+    <div class="navImg"><a href="#!add"><img src="img/3.png" alt=""></a></div>
+    <div class="navText">玩咖手游助手</div>
+</div>
+<!--图片轮播-->
+<div class="imgBox">
+    <div class="homeLb">
+        <img ng-repeat="src in imgSrc" ng-src={{src}} alt="" >
+    </div>
+    <div class="btnLb">
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+</div>
+<!--礼包-->
+<div class="gift">
+    <div class="gift1">
+        礼包公告
+        <div class="gCil">
+            <img src="img/5.png" alt="">
+        </div>
+    </div>
+    <div class="gBox">
+        <div class="g1">
+            <img src="img/6.png" alt="">
+            <h1>王者荣耀</h1>
+            <div>有<span>1</span>款礼包</div>
+        </div>
+        <div class="g1">
+            <img src="img/7.png" alt="">
+            <h1>天天酷跑</h1>
+            <div>有<span>12</span>款礼包</div>
+        </div>
+        <div class="g1">
+            <img src="img/8.png" alt="">
+            <h1>全民突击</h1>
+            <div>有<span>5</span>款礼包</div>
+        </div>
+        <div class="g1">
+            <img src="img/9.png" alt="">
+            <h1>热血传奇</h1>
+            <div>有<span>2</span>款礼包</div>
+        </div>
+    </div>
+
+    <!--nr-->
+    <div class="lb">
+        <div class="llb llb1">
+            <div class="limg"><img src="img/l-1.jpg" alt=""></div>
+            <div class="giftNr">
+                <h6>穿越火线礼包金币</h6>
+                <p>8888金币，疯狂宝贝(3天）</p>
+            </div>
+            <div class="giftDate">日期:2014.12.15</div>
+        </div>
+        <div class="llb ">
+            <div class="limg"><img src="img/l-2.jpg" alt=""></div>
+            <div class="giftNr">
+                <h6>王者荣耀钻石礼包</h6>
+                <p>钻石*38,曹操英雄体验卡*1天</p>
+            </div>
+            <div class="giftDate">日期:2014.12.15</div>
+        </div>
+    </div>
+    <div class="giftFoot">关注游戏领取游戏专属礼包</div>
+</div>
+
+<!--游戏详情-->
+<div class="game" ng-repeat="(key,value) in title">
+    <div class="game1">
+        <div class="ptiImg">
+            <img ng-src={{value.timg}} alt="" class="timg">
+            {{value.ti}}
+        </div>
+        <div class="ptiImg1"><img ng-src={{value.lgImg}} alt="" class="lgImg"></div>
+        <div class="pxImg">
+            <img ng-src={{value.xImg}} alt="" class="xImg">
+            《英雄联盟春节猴哥皮肤礼包》
+        </div>
+        <div class="pxImg1" ng-if=show($index)>
+            <img ng-src={{value.xImg1}} alt="" class="xImg1">
+            《英雄联盟春节猴哥皮肤礼包》
+        </div>
+        <div class="pmore"><button class="more">查看更多</button></div>
+    </div>
+</div>
+<div class="game gam">
+    <div class="game1">
+        <div class="vImg">
+            <img src="img/v-1.png" alt="">
+            视频秀
+        </div>
+        <div ng-repeat="v in video" class="video">
+            <img ng-src={{v}} alt="">
+            6.1版本单排上分最强打野英雄Tops5排行
+        </div>
+        <div class="pmore"><button class="more">查看更多</button></div>
+    </div>
+</div>

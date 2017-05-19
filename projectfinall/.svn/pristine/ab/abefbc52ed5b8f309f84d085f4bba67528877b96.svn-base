@@ -1,0 +1,124 @@
+html{
+    font-size:13px;
+}
+/*首页底部*/
+#btn{
+    background:white;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    padding-top:15px;
+    border-top:2px solid rgb(187,187,187);
+    display:flex;
+    justify-content:space-around;
+    font-size:1.625rem;
+    color:black;
+}
+#btn div{
+    text-align:center;
+}
+/*首页头部*/
+.nav1{
+    margin:20px 0;
+    display:flex;
+    justify-content:space-around;
+    font-size:2.125rem;
+    color:rgb(212,47,47);
+    text-align:center;
+}
+.navText{
+    box-sizing:border-box;
+    width:85%;
+}
+.navImg{
+    width:15%;
+}
+/*图片轮播*/
+.imgBox{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    background:rgb(226,226,226);
+    padding:12px 0;
+}
+.homeLb{
+    width:400%;
+    overflow:hidden;
+    transition:all 2s;
+}
+.homeLb img{
+    float:left;
+    width:25%;
+}
+
+/*轮播小按钮*/
+.btnLb{
+    width:100%;
+    overflow:hidden;
+    position:absolute;
+    margin-top:-40px;
+    left:30%;
+}
+.btnLb li{
+    border:1px solid white;
+    padding:10px;
+    border-radius:50%;
+    background:rgba(150,151,161,0.8);
+    float:left;
+    margin:0 4%;
+    z-index:999;
+}
+.btnLb li:nth-child(1){
+    background:red;
+}
+/*礼包*/
+.gift{
+    margin:4% 2%;
+}
+.gift1{
+
+    text-align:center;
+    font-size:1.9375rem;
+    color:white;
+    background:rgb(244,98,89);
+    width:50%;
+    border-radius:20px;
+    padding:1% 0 0 5%;
+    position:relative;
+
+}
+.gCil{
+    width:39px;
+    height:39px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    left:2%;
+    top:0;
+}
+.gCil img{
+    margin-top:5px;
+    width:65%;
+}
+.g1{
+    width:20%;
+    float:left;
+    margin:20px 2.5%;
+    text-align:center;
+}
+.g1 img{
+    width:100%;
+}
+.g1 h1{
+    font-size:1.5rem;
+}
+.g1 p{
+    margin-top: 1em;
+    font-size: 1.2rem;
+}
+.g1 div{
+    color:rgb(171,171,171);
+}
+.g1 span{
+    color:red;
+}

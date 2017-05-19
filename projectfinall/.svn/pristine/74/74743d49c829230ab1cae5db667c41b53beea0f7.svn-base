@@ -1,0 +1,62 @@
+.add{
+    margin-top: 10%;
+}
+.head-portrait{
+    margin: 0 auto;
+}
+.head-portrait img{
+    width: 22%;
+}
+.load-btn{
+    width: 23%;
+    font-size: 1.4rem;
+    margin-top: 1em;
+}
+.text{
+    background: white;
+    margin-top: 2.5em;
+}
+.text p{
+    font-size: 1.4rem;
+}
+.text a{
+    display: block;
+    margin-top: 1.8em;
+}
+.text img{
+    width: 9%;
+}
+.text span{
+    margin-left: 0.5em;
+    font-size: 1.2rem;
+}
+.fot{
+    margin-top: 1.5em;
+}
+.fot img{
+    width: 5%;
+    margin-right: 0.5em;
+}
+.fot{
+    font-size: 1.2rem;
+    color: rgb(196,196,200);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

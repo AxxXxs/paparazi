@@ -1,0 +1,175 @@
+.login-nav{
+    margin:20px 0;
+    display:flex;
+    justify-content:space-around;
+    color:rgb(212,47,47);
+}
+.login-navText1{
+    font-size:0.3rem;
+    width:33%;
+    text-align:center;
+}
+.login-navText2{
+    width:33%;
+    text-align:right;
+    padding-right: 0.4rem;
+    font-size: 0.2rem;
+    padding-top: 0.1rem;
+}
+.login-navImg{
+    width:33%;
+    text-align:left;
+    padding-left: 0.4rem;
+}
+.login-navImg img{
+    width: 6%;
+}
+
+.login-content{
+    background-image: url("../img/login-2.png");
+    background-size: 100%;
+    padding-bottom: 5rem;
+}
+.login-head{
+    width: 25%;
+    margin:  auto;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+.login-head img{
+    width: 100%;
+}
+.login-content input{
+    background: rgba(255,255,255,0.5);
+    border: none;
+    border-radius: 0.07rem;
+    width: 90%;
+    height: 0.8rem;
+    letter-spacing: 0.04rem;
+    padding-left: 0.4rem;
+    font-size: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.login-content input::-webkit-input-placeholder{
+    color: white;
+}
+.login-btn{
+    width: 90%;
+    height: 0.8rem;
+    background: white;
+    border: none;
+    border-radius: 0.07rem;
+    color: rgb(212,47,47);
+    font-size: 0.3rem;
+    margin: 0.3rem 0;
+}
+.login-content p{
+    color: white;
+    text-decoration: underline;
+    text-align: right;
+    font-size: 0.25rem;
+    margin-right: 0.4rem;
+    letter-spacing: 0.03rem;
+}
+
+
+/*我的游戏礼包css部分*/
+.giftNav{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(249,249,249);
+}
+.giftNav p{
+    width: 80%;
+    float: left;
+    text-align: center;
+    font-size: 0.35rem;
+    color: #ff0b20;
+    padding:0.2rem 0;
+}
+.giftNav img{
+    float: left;
+    width: 0.2rem;
+    margin: 0.3rem 0 0 0.5rem;
+}
+.giftContent{
+    padding-bottom: 5rem;
+}
+.giftUl{
+    width: 100%;
+    padding: 2%;
+}
+.giftUl .title{
+    padding:1rem 0;
+    font-size: 2.3rem;
+}
+.giftUl li{
+    overflow: hidden;
+}
+.giftUl li .div1,.giftUl li .div2,.giftUl li .dateMa{
+    float: left;
+}
+.div1{
+    width: 25%;
+}
+.giftUl li div img{
+    width: 100%;
+}
+.dateMa{
+    width: 49%;
+    padding: 2%;
+}
+.dateMa div:nth-child(1){
+    color: red;
+    font-size: 1.2rem;
+}
+.dateMa div:nth-child(2){
+    padding:0.5rem;
+    background-color: rgb(238,238,238);
+    font-size: 1.4rem;
+    color: rgb(185,185,185);
+    font-weight: 100;
+    margin: 0.5rem 0 ;
+}
+.dateMa div:nth-child(3){
+    color: rgb(167,135,185);
+    font-size: 1.4rem;
+}
+.giftUl li .div2{
+    width: 18%;
+}
+.giftUl li .div2 a{
+    display: inline-block;
+    max-width: 100px;
+    width: 100%;
+    padding: 0.4rem 0;
+    background-color: rgb(245,98,67);
+    color: white;
+    text-align: center;
+    border-radius: 8%;
+    margin-top: 41%;
+}
+.useIt{
+    color:#727272;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="headP text-center">
+        <div class="head-portrait">
+            <img src="img/2-1.png" alt="">
+        </div>
+    </div>
+    <div class="load-btn text-center">
+        <button class="btn btn-danger ">登 陆</button>
+    </div>
+    <div class="text">
+        <p>我关注的游戏</p>
+        <a href="###">
+            <img src="img/2-2.png" alt="">
+            <span>我关注的游戏</span>
+            <img class="pull-right" src="img/2-4.png" style=" width: 3%;height: 2%;margin-top: 0.5em">
+        </a>
+    </div>
+    <div class="fot">
+        <a href="###">
+            <img src="img/2-3.png" alt="">
+            <span>添加游戏</span>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+/**
+ * Created by lanou3g on 17/4/21.
+ */
+//自定义模块->注入到app.js中
+var controllersModule = angular.module("controllersModule",[]);
+
+//绑定控制器
+controllersModule.controller("mainC",function($scope){
+    $scope.name="mainC";
+})
+
+//home界面的控制器
+controllersModule.controller("homeC",function($scope,facService){
+
+})
+controllersModule.controller("loadingC",function($scope,facService){
+
+})
+
+controllersModule.controller("video",function($scope){
+
+})
+controllersModule.controller("shop",function($scope){
+
+})
+controllersModule.controller("my",function($scope){
+
+})

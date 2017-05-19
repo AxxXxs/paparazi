@@ -1,0 +1,59 @@
+.head-portrait{
+    margin: 0 auto;
+}
+.head-portrait img{
+    width: 22%;
+}
+.btn{
+    width: 23%;
+    font-size: 1.7rem;
+    margin-top: 1em;
+}
+.text{
+    background: white;
+    margin-top: 2.5em;
+}
+.text p{
+    font-size: 2.1rem;
+}
+.text a{
+    display: block;
+    margin-top: 1.5em;
+}
+.text img{
+    width: 9%;
+}
+.text span{
+    margin-left: 0.5em;
+    font-size: 1.6rem;
+}
+.fot{
+    margin-top: 1.5em;
+}
+.fot img{
+    width: 6%;
+}
+.fot span{
+    margin-left: 0.5em;
+    font-size: 1.7rem;
+    color: rgb(196,196,200);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

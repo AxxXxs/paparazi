@@ -1,0 +1,10 @@
+<div class="imgBox">
+    <div class="homeLb">
+        <img ng-repeat="src in imgSrc" ng-src={{src}} alt="" >
+    </div>
+    <div class="btnLb">
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+</div>

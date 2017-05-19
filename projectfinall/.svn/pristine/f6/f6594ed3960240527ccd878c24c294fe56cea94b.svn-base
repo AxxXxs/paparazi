@@ -1,0 +1,35 @@
+.nav1 {
+    margin: 10px;
+}
+.shop-bottom{
+    margin-bottom:100px;
+    overflow:hidden;
+}
+.shop-bottom div{
+    margin-bottom:10px;
+    overflow:hidden;
+}
+.shop-bottom p{
+    margin-left: 1em;
+}
+.shop-bottom img{
+    margin-bottom: 1em;
+    width:100%;
+}
+.shop-bottom button{
+    font-size: 1.3rem;
+}
+.sBtn1{
+    width: 8.7em;
+}
+.sBtn2{
+    width: 8.7em;
+    position:relative;
+    top:-10px;
+}
+.sImg{
+    margin-top: 1em;
+}
+.b{
+    text-align:center;
+}

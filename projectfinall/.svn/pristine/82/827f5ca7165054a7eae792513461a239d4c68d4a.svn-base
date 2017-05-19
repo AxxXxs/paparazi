@@ -1,0 +1,17 @@
+<div class="login-nav">
+    <div class="login-navImg"><a href="#!add"><img src="img/login-3.png" alt=""></a></div>
+    <div class="login-navText1">玩咖用户登录</div>
+    <div class="login-navText2">注册</div>
+</div>
+<div class="login-content">
+    <div class="login-head">
+        <a href=""><img src="img/login-1.png" alt=""></a>
+    </div>
+    <div class="text-center">
+        <p id="login-p1"></p>
+        <input class="login-txt1" type="text" placeholder="您的账号(手机号)">
+        <input class="login-txt2" type="text" placeholder="您的玩咖账号密码">
+        <a href="#!register"><button class="login-btn">登 录</button></a>
+        <p>忘记密码</p>
+    </div>
+</div>

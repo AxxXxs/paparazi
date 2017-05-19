@@ -1,0 +1,81 @@
+<div class="nav1 row">
+    <div class="col-xs-4"><img src="img/3.png" alt=""></div>
+    <div class="col-xs-4">
+        <p>商城</p>
+    </div>
+    <div class="col-xs-4">
+        <p>我的订单</p>
+    </div>
+</div>
+<div class="shop-top">
+    <div class="imgBox">
+        <div class="homeLb">
+            <img ng-repeat="src1 in imgSrc1" ng-src={{src1}} alt="" >
+        </div>
+        <div class="btnLb">
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+    </div>
+    <div class="gift">
+        <div class="g1">
+            <img src="img/s-2.png" alt="">
+            <p>天涯明月刀</p>
+        </div>
+        <div class="g1">
+            <img src="img/s-3.png" alt="">
+            <p>天天酷跑</p>
+        </div>
+        <div class="g1">
+            <img src="img/s-4.png" alt="">
+            <p>我的世界</p>
+        </div>
+        <div class="g1">
+            <img src="img/s-5.png" alt="">
+            <p>大话西游</p>
+        </div>
+    </div>
+</div>
+
+<div class="shop-bottom row container-fluid">
+    <div class="col-xs-12">
+        <h4>热门礼包</h4>
+    </div>
+    <div class="col-xs-6">
+        <img class="col-xs-12" src="img/s-6.png" alt="">
+        <p>领取条件: 连续签到25天</p>
+        <p>10q币</p>
+    </div>
+    <div class="col-xs-6">
+        <img class="col-xs-12" src="img/s-7.png" alt="">
+        <div>
+            <p>领取条件: 免费</p>
+            <p>800元宝 600宝石</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<div class="nav1">
+    <div class="navImg"><img src="img/3.png" alt=""></div>
+    <div class="navText">玩咖手游助手</div>
+</div>
+<!--图片轮播-->
+<div class="imgBox">
+    <div class="homeLb">
+        <img ng-repeat="src in imgSrc" ng-src={{src}} alt="" >
+    </div>
+    <div class="btnLb">
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+</div>
+<!--礼包-->
+<div class="gift">
+    <div class="gift1">
+        礼包公告
+        <div class="gCil">
+            <img src="img/5.png" alt="">
+        </div>
+    </div>
+    <div class="g1">
+        <img src="img/6.png" alt="">
+        <h1>王者荣耀</h1>
+        <div>有<span>1</span>款礼包</div>
+    </div>
+    <div class="g1">
+        <img src="img/7.png" alt="">
+        <h1>天天酷跑</h1>
+        <div>有<span>12</span>款礼包</div>
+    </div>
+    <div class="g1">
+        <img src="img/8.png" alt="">
+        <h1>全民突击</h1>
+        <div>有<span>5</span>款礼包</div>
+    </div>
+    <div class="g1">
+        <img src="img/9.png" alt="">
+        <h1>热血传奇</h1>
+        <div>有<span>2</span>款礼包</div>
+    </div>
+</div>

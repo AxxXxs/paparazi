@@ -1,0 +1,63 @@
+<div class="my">
+    <a href="#!add"><img src="img/3.png" alt=""></a>
+</div>
+<div class="myWall">
+    <div class="myContent">
+        <div class="myHead text-center">
+            <img src="img/my-3.png" alt="">
+        </div>
+        <div class="myLoad text-center">
+            <p>游客</p>
+            <a href="#!login">
+                <button class="btn btn-sm btn-danger">登录</button>
+            </a>
+        </div>
+        <div class="sign">
+            <div class="myLeft pull-left">
+                <span>连续签到 <u>0</u> 天</span>
+                <a href="">等级说明</a>
+            </div>
+            <div class="myRight pull-right">
+                <a href="">
+                    <img src="img/my-4.png" alt="">
+                    <span>签到</span>
+                </a>
+            </div>
+        </div>
+        <div class="ask">
+            <li>
+                <img class="askImg1" src="img/my-5.png" alt="">
+                <a href="">我的礼包</a>
+                <img class="askImg2 pull-right" src="img/my-9.png" alt="">
+            </li>
+            <li>
+                <img class="askImg1" src="img/my-6.png" alt="">
+                <a href="">我的订单</a>
+                <img class="askImg2 pull-right" src="img/my-9.png" alt="">
+            </li>
+            <li>
+                <img class="askImg1" src="img/my-7.png" alt="">
+                <a href="">我的收藏</a>
+                <img class="askImg2 pull-right" src="img/my-9.png" alt="">
+            </li>
+            <li>
+                <img class="askImg1 " src="img/my-8.png" alt="">
+                <a href="">关于我们</a>
+                <img class="askImg2 pull-right" src="img/my-9.png" alt="">
+            </li>
+        </div>
+    </div>
+</div>
+<div ng-include="'templateView/foot.html'"></div>
+
+
+
+
+
+
+
+
+
+
+
+

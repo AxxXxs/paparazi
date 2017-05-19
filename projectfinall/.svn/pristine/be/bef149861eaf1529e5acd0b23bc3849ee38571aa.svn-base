@@ -1,0 +1,62 @@
+/**
+ * Created by lanou3g on 17/4/21.
+ */
+//自定义模块->注入到app.js中
+var controllersModule = angular.module("controllersModule",[]);
+
+//绑定控制器
+controllersModule.controller("mainC",function($scope){
+    $scope.lb = function(ele1,ele2){
+        var left = 0;
+        var timer;
+        function autoplay(){
+            timer=setInterval(function(){
+                left++;
+                if(left==3){
+                    $("ele1").eq(0).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});;
+                }
+                if(left>3){
+                    left=0;
+                    $(ele2)[0].style.transition="all 0s"
+                }else{
+                    $(ele2)[0].style.transition="all 2s"
+                }
+                $(ele1).eq(left).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});
+                $(ele2)[0].style.marginLeft=-left*100+"%";
+            },2000)
+        }
+        autoplay();
+        //小按钮
+        $(ele1).each(function(){
+            $(this).on("click",function(){
+                clearInterval(timer);
+                $(ele2)[0].style.transition="all 0s"
+                $(this).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});
+                $(ele2)[0].style.marginLeft=-$(this).index()*100+"%";
+                left=$(this).index();
+                autoplay();
+            })
+        })
+    }
+})
+
+//home界面的控制器
+controllersModule.controller("homeC",function($scope,facService){
+    $scope.lb(".btnLb li",".homeLb");
+    // $scope.imgSrc=["4.png","l2.png","l2.jpg","4.png"];
+    $scope.imgSrc=["img/4.png","img/l2.png","img/l2.jpg","img/4s.png"]
+
+})
+controllersModule.controller("loadingC",function($scope,facService){
+
+})
+
+controllersModule.controller("video",function($scope){
+
+})
+controllersModule.controller("shop",function($scope){
+
+})
+controllersModule.controller("my",function($scope){
+
+})

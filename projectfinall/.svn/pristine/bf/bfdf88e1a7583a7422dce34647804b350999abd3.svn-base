@@ -1,0 +1,80 @@
+/**
+ * Created by lanou3g on 17/4/21.
+ */
+//自定义模块->注入到app.js中
+var controllersModule = angular.module("controllersModule",[]);
+
+//绑定控制器
+controllersModule.controller("mainC",function($scope){
+    $scope.lb = function(ele1,ele2){
+        var left = 0;
+        var timer;
+        function autoplay(){
+            clearInterval(timer);
+            timer=setInterval(function(){
+                left++;
+                if(left==3){
+                    $(ele1).eq(0).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});;
+                }
+                if(left>3){
+                    left=0;
+                    $(ele2)[0].style.transition="all 0s"
+                }else{
+                    $(ele2)[0].style.transition="all 2s"
+                }
+                $(ele1).eq(left).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});
+                $(ele2)[0].style.marginLeft=-left*100+"%";
+            },2000)
+        }
+        autoplay();
+        //小按钮
+        $(ele1).each(function(){
+            $(this).on("click",function(){
+                clearInterval(timer);
+                $(ele2)[0].style.transition="all 0s"
+                $(this).css({background:"red"}).siblings().css({background:"rgba(150,151,161,0.8)"});
+                $(ele2)[0].style.marginLeft=-$(this).index()*100+"%";
+                left=$(this).index();
+                autoplay();
+            })
+        });
+        $("#btn div,.navImg").click(function(){
+            clearInterval(timer);
+        });
+    }
+})
+
+//home界面的控制器
+controllersModule.controller("homeC",function($scope,facService){
+    $scope.lb(".btnLb li",".homeLb");
+    $scope.show=function(i){
+        if(i==1){
+            return false;
+        }else{
+            return true;
+        }
+    };
+    $scope.imgSrc=["img/4.png","img/l2.png","img/l2.jpg","img/4s.png"];
+    $scope.title=[{timg:"img/cy-1.png",ti:"穿越火线",lgImg:"img/cy-2.jpg",xImg:"img/cy-3.jpg",xImg1:"img/cy-4.jpg"},
+        {timg:"img/y-1.png",ti:"英雄联盟",lgImg:"img/y-2.jpg",xImg:"img/y-3.jpg",xImg1:"img/cy-3.jpg"},
+        {timg:"img/y-7.png",ti:"英雄联盟",lgImg:"img/y-4.jpg",xImg:"img/y-5.jpg",xImg1:"img/y-6.jpg"}];
+
+    $scope.video=["img/v-2.jpg","img/v-3.jpg","img/v-4.jpg","img/v-5.jpg"];
+
+})
+controllersModule.controller("addition",function($scope,facService){
+
+})
+
+controllersModule.controller("video",function($scope){
+    $scope.lb(".btnLb li",".homeLb");
+    $scope.imgSrc=["img/v2-1.jpg","img/v2-2.jpg","img/v2-3.jpg","img/v2-1-1.jpg"];
+    $scope.video=["img/v-2.jpg","img/v-3.jpg","img/v-4.jpg","img/v-5.jpg"];
+})
+controllersModule.controller("shop",function($scope){
+    $scope.lb(".btnLb li",".homeLb");
+    $scope.imgSrc1 = ["img/s-1.png","img/l2.png","img/l2.jpg","img/s-1-1.png"]
+})
+controllersModule.controller("my",function($scope){
+
+})

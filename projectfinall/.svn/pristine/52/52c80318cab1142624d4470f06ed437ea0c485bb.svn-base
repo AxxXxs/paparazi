@@ -1,0 +1,8 @@
+<div>
+    <button ng-click="showHide()">点击</button>
+    <ul ng-if="flag">
+        <li>小明</li>
+        <li>小红</li>
+        <li>{{name}}</li>
+    </ul>
+</div>

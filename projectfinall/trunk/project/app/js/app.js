@@ -1,0 +1,81 @@
+/**
+ * Created by lanou3g on 17/4/21.
+ */
+//加载模块
+var myApp = angular.module("myApp",["ngRoute","controllersModule","filtersModule","services","directiveModule"]);
+//模块->路由、指令、过滤、控制器、服务
+
+//config函数配置
+
+myApp.config(function($routeProvider,facServiceProvider){
+    $routeProvider.when("/",{
+        templateUrl:"templateView/home.html",
+        controller:"homeC"
+    });
+    $routeProvider.when("/home",{
+        templateUrl:"templateView/home.html",
+        //给主页指定一个控制器
+        controller:"homeC"
+    });
+    $routeProvider.when("/login",{
+        templateUrl:"templateView/login.html",
+        controller:"login"
+    });
+    $routeProvider.when("/register",{
+        templateUrl:"templateView/register.html",
+        controller:"register"
+    });
+    $routeProvider.when("/video",{
+        templateUrl:"templateView/video.html",
+        controller:"video"
+    });
+    $routeProvider.when("/moreVideo",{
+        templateUrl:"templateView/moreVideo.html",
+        controller:"moreVideo"
+    });
+    $routeProvider.when("/detailVideo",{
+        templateUrl:"templateView/detailVideo.html",
+        controller:"detailVideo"
+    });
+    $routeProvider.when("/shop",{
+        templateUrl:"templateView/shop.html",
+        controller:"shop"
+    });
+    $routeProvider.when("/my",{
+        templateUrl:"templateView/my.html",
+        controller:"my"
+    });
+    $routeProvider.when("/myGift",{
+        templateUrl: "templateView/myGift.html",
+        controller:"myGift"
+    });
+    $routeProvider.when("/strategy",{
+        templateUrl: "templateView/strategy.html",
+        controller:"strategyC"
+    });
+    $routeProvider.when("/collect",{
+        templateUrl: "templateView/collect.html",
+        controller:"collectC"
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

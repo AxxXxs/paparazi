@@ -1,0 +1,115 @@
+.my{
+    margin:0.3rem;
+}
+.my img{
+    width: 8%;
+}
+.myWall{
+    background-image: url("../img/my-1.png");
+    background-size: 100%;
+    overflow: hidden;
+}
+.myContent{
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255,255,255,0.9);
+    margin-top: 3.2rem;
+    position: relative;
+}
+.myHead{
+    width: 25%;
+    position: absolute;
+    top: -1rem;
+    left: 2.5rem;
+}
+.myHead img{
+    width: 100%;
+}
+.myLoad{
+    padding-top: 0.8rem;
+}
+.myLoad p{
+    font-size: 0.3rem;
+}
+.myLoad button{
+    font-size: 0.3rem;
+    width: 1.4rem;
+}
+.sign{
+    overflow: hidden;
+    padding: 0.3rem;
+    border-bottom: solid 1px rgb(229,229,229);
+}
+.myLeft{
+    margin-left: 0.5rem;
+}
+.myLeft span{
+    font-size: 0.28rem;
+}
+.myLeft u{
+    color: orange;
+}
+.myLeft a{
+    margin-left: 0.1rem;
+    font-size: 0.22rem;
+    text-decoration: underline;
+    color: rgb(242,99,93);
+}
+.myRight{
+    margin-right: 0.2rem;
+}
+.myRight a{
+    font-size: 0.28rem;
+    color: rgb(242,99,93);
+}
+.myRight a img{
+    width: 26%;
+    margin-right: 0.1rem;
+    vertical-align: top;
+}
+.myRight span{
+    text-decoration: underline;
+}
+.ask{
+    padding-bottom: 1.5rem;
+}
+.ask li{
+    border-bottom: solid 1px rgb(229,229,229);
+    padding: 0.05rem;
+}
+.ask li a{
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 0.28rem;
+}
+.askImg1{
+    width: 5.5%;
+    margin: 0.2rem 0.2rem 0.2rem 0.3rem;
+}
+.askImg2{
+    width: 2%;
+    margin-top: 0.25rem;
+    margin-right: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

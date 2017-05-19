@@ -1,0 +1,11 @@
+<div class="giftNav">
+    <img src="img/gift-1.png" alt="">
+    <p>新手攻略</p>
+</div>
+<ul class="strategyContent">
+    <li ng-repeat="value in strategy">
+        <img src="{{value.strategyImg}}" alt="">
+        <p>{{value.title}}</p>
+        <em>{{value.time}}</em>
+    </li>
+</ul>
