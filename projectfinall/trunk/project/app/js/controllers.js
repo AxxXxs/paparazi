@@ -63,7 +63,7 @@ controllersModule.controller("homeC",function($scope,facService){
         $(".add").fadeIn(500);
     });
 
-    $(".add").click(function () {
+    $(".imgBox,.gift").click(function () {
            $(".add").fadeOut(500);
     });
 
@@ -144,14 +144,15 @@ controllersModule.controller("login",function($scope){
 })
 controllersModule.controller("register",function($scope){
     //关于我们js部分
-    $(".registerAbout").click(function () {
-        $(".registerAbout").fadeIn(500);
+    $(".aboutA").click(function () {
+        $(".about").fadeIn(500);
     });
-    $(".registerAboutBtn").click(function () {
-        $(".registerAbout").fadeOut(500);
+    $(".aboutBtn").click(function () {
+        $(".about").fadeOut(500);
     });
-    var aboutH = $(".registerAbout").height()/2;
-    $(".registerAbout").css("margin-top",-aboutH);
+    var aboutH = $(".about").height()/2;
+    console.log(-aboutH);
+    $(".about").css("margin-top",-aboutH);
 })
 
 //我的礼包控制器
